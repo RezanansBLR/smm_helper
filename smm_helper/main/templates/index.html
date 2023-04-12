@@ -1,12 +1,30 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная SMMH</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>BI | Поиск и анализ</title>
 </head>
 <body>
-    <h1>{{}}</h1>
+    <div class="header">
+        <div class="container">
+            <a href="" class="title_link">BLOGERS INSPECTOR</a>
+            <div class="box">
+                <div class="nav-box">
+                    <div class="nav-it">Функции</div>
+                    <div class="nav-it">Цены</div>
+                    <div class="nav-it">Блог</div>
+                </div>
+                <div class="aut-box">
+                    <a href="#" class="sing-in">Войти</a>
+                    <a href="#" class="sing-up">Регистрация</a>
+                </div>                
+            </div>
+        </div>
+    </div>
 </body>
 </html>

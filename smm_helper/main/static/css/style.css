@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'oswald';
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/index_bgr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-size: 18px;
+    font-family: Gilroy,Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: bold;
+}
+
+.header{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+.title_link{
+    text-decoration: none;
+    color:rgb(43, 65, 58);
+    font-size: 25px;
+    font-family:'oswald';
+    font-weight:bold;
+    width: 150px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-box{
+    display: flex;
+    color:rgb(43, 65, 58); 
+}
+
+.nav-it{
+    margin: 0px 28px;
+}
+
+.sing-in{
+    text-decoration: none;
+    color:rgb(43, 65, 58);
+}
+
+.sing-up{
+    margin-left: 5px;
+    padding: 13px 28px;
+    height: 50px;
+    min-width: 50px;
+    line-height: 24px;
+    border-radius: 100px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+}
