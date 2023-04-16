@@ -10,6 +10,7 @@
     <title>BI | Поиск и аналитика</title>
 </head>
 <body>
+    {% block content %}
     <div class="header">
         <div class="container">
             <a href="" class="title_link">BLOGERS INSPECTOR</a>
@@ -26,5 +27,14 @@
             </div>
         </div>
     </div>
+    <div class="form">
+        <form class="search-form" action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            <p><label for="{{ form.url.id_for_label }}" class="form-label">{{ form.url.label }}</label>{{ form.url }}</p>
+            <div class="form-error">{{ form.url.errors }}</div>
+            <button class="button-search" type="submit">Поиск</button>
+        </form>
+    </div>
+    {% endblock %}
 </body>
 </html>
